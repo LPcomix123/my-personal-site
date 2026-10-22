@@ -87,8 +87,8 @@ body {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding-bottom: 1px;
   text-align: left;
+  padding-bottom: 10px;
 }
 
 .card h2,
