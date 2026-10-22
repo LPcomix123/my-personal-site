@@ -105,3 +105,19 @@ body {
     display: inline-block;
     transform: translateY(-4px);
 }
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.3s ease, opactity 0.3s ease, visibility 0.3s;
+}
+
+.nav-links.is-open {
+    max-height: 400px;
+    opacity: 1;
+    visibility: visible;
+}
