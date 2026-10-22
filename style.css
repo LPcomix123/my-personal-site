@@ -21,6 +21,7 @@ body {
 
 .nav-links {
     display: flex;
+    flex-direction: row;
 }
 
 .menu-toggle {
@@ -52,24 +53,29 @@ body {
 @media (max-width: 600px) {
     .menu-toggle {
         display: block;
-        width: 100%;
         padding: 14px 16px;
         border: 0;
         background: transparent;
         color: #333;
         font: inherit;
-        font-size: 17px;
-        text-align: left;
+        font-size: 24px;
+        line-height: 1;
         cursor: pointer;
     }
 
     .nav-links {
-        display: none;
         flex-direction: column;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s;
     }
 
     .nav-links.is-open {
-        display: flex;
+        max-height: 400px;
+        opacity: 1;
+        visibility: visible;
     }
 
     .navbar a {
@@ -104,20 +110,4 @@ body {
 .card a:hover {
     display: inline-block;
     transform: translateY(-4px);
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    transition: max-height 0.3s ease, opactity 0.3s ease, visibility 0.3s;
-}
-
-.nav-links.is-open {
-    max-height: 400px;
-    opacity: 1;
-    visibility: visible;
 }
