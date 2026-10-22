@@ -131,6 +131,7 @@ body {
 
 .links {
     align-items: center;
+    text-align: center;
     padding-left: 4px;
     padding-right: 2px;
 }
