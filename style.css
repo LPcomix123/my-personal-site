@@ -92,9 +92,13 @@ body {
 }
 
 .card h2,
-.card h1,
-.card li {
+.card h1 {
     text-align: center;
+}
+
+.card li {
+    text-align: left;
+    font-size: medium;
 }
 
 .card:hover {
