@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-    translate: transformY()
+    translate: transformY(1px)
 }
 
 .navbar{
@@ -136,7 +136,7 @@ a:hover {
 
 .card a:hover {
     display: inline-block;
-    transform: translateY(-4px);
+    transform: translateY(-1px);
 }
 
 .abt {
