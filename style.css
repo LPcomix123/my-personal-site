@@ -135,3 +135,25 @@ body {
     padding-left: 4px;
     padding-right: 2px;
 }
+
+.links a:hover {
+    transform: none;
+}
+
+.links a img {
+    transition: transform 0.2s ease;
+}
+
+.links a:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    color: #878787;   
+    font-size: small;
+    transition: color 0.3s ease;
+}
+
+footer:hover {
+    color: #333;
+}
