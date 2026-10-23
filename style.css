@@ -243,6 +243,7 @@ footer:hover {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
+.nav-links,
 .links a {
     background-color: #00ffff00;
 }
