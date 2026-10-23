@@ -12,6 +12,7 @@ a {
     border-radius: 3px;
     background-color: #04AA6D;
     padding: 3px;
+    color: rgb(246, 255, 145);
 }
 
 a:hover {
